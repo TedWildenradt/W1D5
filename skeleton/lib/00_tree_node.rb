@@ -26,7 +26,6 @@ class PolyTreeNode
       node.children.push(self) unless node == nil
     end
     if @parent == nil
-      #debugger
       @parent = node
       node.children.push(self) unless node == nil
     else
