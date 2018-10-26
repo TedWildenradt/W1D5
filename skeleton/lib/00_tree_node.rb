@@ -7,7 +7,7 @@ class PolyTreeNode
     @children = children
     @parent = nil
   end
-  
+
   def push(node)
     @children << node
   end
@@ -59,21 +59,6 @@ class PolyTreeNode
       return result if result
     end
     nil
-    # stack = [self]
-    # until stack.empty?
-    #   el = stack.pop
-    #
-    #   if el.value == target_value
-    #     return el
-    #   end
-    #   el.children.each do |child|
-    #     stack.push(child)
-    #   end
-    # end
-    # nil
-      # if @value == target_value
-      #   return self
-      # end
   end
 
   def bfs(target_value)
