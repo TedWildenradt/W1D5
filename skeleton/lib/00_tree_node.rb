@@ -65,7 +65,8 @@ class PolyTreeNode
     end
     stack = self.children
     stack.each do |child|
-      return child.dfs(target_value) unless child.dfs(target_value) == nil
+      result = child.dfs(target_value)
+      return result if result
     end
     nil
     # stack = [self]
